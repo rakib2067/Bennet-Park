@@ -1,0 +1,35 @@
+main{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/1476b252797241.591cd87b28367.jpg);
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    
+}
+main .main-section{
+    
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.267);
+}
+button a{
+    text-decoration: none;
+    font-size: 1.2em;
+}
+button a:hover{
+    font-size: 1.4em;
+}
+footer{
+    padding: 45px;
+    display: flex;
+    justify-content: space-around;
+}
+.youtube{
+    width:320px;
+    height: 215px;
+}
+@media screen {
+    
+}
+
+
+
