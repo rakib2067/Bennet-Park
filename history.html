@@ -19,9 +19,34 @@
     body {
       background-color: #ccc;
     }
+    @media screen and (min-width: 1200px) {
+      .james {
+        width: 540px;
+        height: 433px;
+      }
+    }
+    @media screen and (max-width: 1199px) {
+      .james {
+        width: 340px;
+        height: 433px;
+      }
+      .top {
+        flex-direction: column;
+        align-items: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      .bpark {
+        margin-bottom: 1rem;
+      }
+      figcaption {
+        text-align: center;
+      }
+    }
   </style>
   <body class="container">
-    <nav class="sticky-top">
+    <nav>
       <div>
         <header
           class="d-flex flex-wrap justify-content-between py-3 mb-4 border-bottom"
@@ -41,7 +66,7 @@
             </li>
             <li class="nav-item">
               <a href="gallery.html" class="nav-link" aria-current="page"
-                >Location</a
+                >Gallery</a
               >
             </li>
           </ul>
@@ -55,7 +80,9 @@
       <section class="info py-5">
         <h2>James Gordon Bennet</h2>
         <hr />
-        <article class="top d-flex justify-content-between">
+        <article
+          class="top d-flex md-flex-column d-flex-lg justify-content-between"
+        >
           <div class="textContent">
             <p class="me-5">
               James Gordon Bennett Sr. (September 1, 1795 - June 1, 1872) was
@@ -83,39 +110,10 @@
               and, then, assistant editor of the New York Courier and Enquirer,
               one of the oldest newspapers in the city.
             </p>
-            <!-- <p class="me-5">
-              Bennett Park, also known as James Gordon Bennett Park, is a
-              1.8-acre (0.73 ha) public park in New York City, named for James
-              Gordon Bennett, Sr., the newspaper publisher who launched the New
-              York Herald in 1835. It is located between Pinehurst and Fort
-              Washington Avenues and West 183rd and 185th Streets in the Hudson
-              Heights neighborhood of Washington Heights in northern Manhattan,
-              on land purchased by Bennett in 1871, the year before his death.
-              It sits opposite the northern Fort Washington Avenue entrance to
-              the 181st Street subway station on the IND Eighth Avenue Line,
-              serviced by the A train.
-            </p>
-            <p class="me-5">
-              The park, which opened in 1929, was built on the site of Fort
-              Washington, from which the Continental Army delayed the advance of
-              British troops in 1776. The commemorative marble, bronze and
-              granite stele, with sculpture by Charles R. Lamb, is located on
-              the eastern perimeter wall of the park, and was dedicated in 1901.
-            </p>
-            <p class="me-5">
-              On the west side of the park lies an outcropping of Manhattan
-              schist which is the highest natural point in Manhattan - 265 feet
-              (81 m) above sea level - with a square stone marker attesting to
-              the fact.[5] The schist is part of the bedrock foundation of New
-              York City, which allows the construction of skyscrapers where it
-              lies close to the surface.
-            </p> -->
           </div>
           <figure>
             <img
-              class="align-middle"
-              width="540px"
-              height="433px"
+              class="align-middle james"
               style="object-fit: cover"
               src="assets/James_Gordon_Bennett_Sr.jpg"
               alt=""
@@ -127,8 +125,46 @@
         </article>
         <h2>Bennet Park</h2>
         <hr />
-        <img src="" alt="" />
-        <article class="top d-flex justify-content-between"></article>
+        <article class="top d-flex justify-content-between">
+          <figure>
+            <img
+              class="bpark"
+              style="object-fit: cover"
+              src="assets/park.jpg"
+              alt=""
+            />
+            <figcaption class="figure-caption mt-1">Bennet Park</figcaption>
+          </figure>
+          <div class="textContent">
+            <p class="ms-5">
+              Bennett Park, also known as James Gordon Bennett Park, is a
+              1.8-acre (0.73 ha) public park in New York City, named for James
+              Gordon Bennett, Sr., the newspaper publisher who launched the New
+              York Herald in 1835. It is located between Pinehurst and Fort
+              Washington Avenues and West 183rd and 185th Streets in the Hudson
+              Heights neighborhood of Washington Heights in northern Manhattan,
+              on land purchased by Bennett in 1871, the year before his death.
+              It sits opposite the northern Fort Washington Avenue entrance to
+              the 181st Street subway station on the IND Eighth Avenue Line,
+              serviced by the A train.
+            </p>
+            <p class="ms-5">
+              The park, which opened in 1929, was built on the site of Fort
+              Washington, from which the Continental Army delayed the advance of
+              British troops in 1776. The commemorative marble, bronze and
+              granite stele, with sculpture by Charles R. Lamb, is located on
+              the eastern perimeter wall of the park, and was dedicated in 1901.
+            </p>
+            <p class="ms-5">
+              On the west side of the park lies an outcropping of Manhattan
+              schist which is the highest natural point in Manhattan - 265 feet
+              (81 m) above sea level - with a square stone marker attesting to
+              the fact.[5] The schist is part of the bedrock foundation of New
+              York City, which allows the construction of skyscrapers where it
+              lies close to the surface.
+            </p>
+          </div>
+        </article>
       </section>
     </main>
   </body>
