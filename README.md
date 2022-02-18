@@ -19,3 +19,8 @@ We’re interested in seeing a live demo of your site and hearing your answers t
 - What was your biggest challenge?
 - What was your biggest win?
 - In retrospect, what, if anything, would you do differently?
+
+
+##THIS IS THE RESULT in 2h (by Arvin Jhurry, Rakib Ali and myself):
+
+https://bennett-park-web.netlify.app/
